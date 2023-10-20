@@ -1,38 +1,77 @@
-.App {
+/* App.css */
+
+body {
+  background-color: #f0f0f0; /* Set a light background color. */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row {
+  margin-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.col-md-6 {
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+  color: #3498db;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  color: #555;
+  font-weight: bold;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style your dropdown component. */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.dropdown-list {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ddd;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown-list li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dropdown-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.selected-item {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #3498db;
 }
